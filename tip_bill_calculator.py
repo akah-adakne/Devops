@@ -1,16 +1,18 @@
-print("Welcome to the tip calculator.")
+print("welcome to the tip calculator")
+a =int(input("what was the total bill "))
+b=int(input("how much tip would you like to give? 10 , 20 , 30 , 50 " ))
+c =int(input("how many people to split the bill "))
+print("each person should pay ")
+d = int((a + b))
+e = int((d / c))
+print(e)
 
-# Step 1: Get inputs and convert to appropriate types
-bill = float(input("What was the total bill? $"))
-tip_percent = int(input("How much tip would you like to give? 10, 20, 30, or 50? "))
-people = int(input("How many people to split the bill? "))
+# "C:\Users\AKASH ADAKNE\PyCharmMiscProject\.venv\Scripts\python.exe" "C:\Users\AKASH ADAKNE\PyCharmMiscProject\data_types.py" 
+# welcome to the tip calculator
+# what was the total bill 800
+# how much tip would you like to give? 10 , 20 , 30 , 50 10
+# how many people to split the bill 2
+# each person should pay 
+# 405
 
-# Step 2: Calculate tip and total bill
-tip_amount = (tip_percent / 100) * bill
-total_bill = bill + tip_amount
-
-# Step 3: Divide by number of people
-amount_per_person = total_bill / people
-
-# Step 4: Show result rounded to 2 decimal places
-print(f"Each person should pay: ${amount_per_person:.2f}")
+# Process finished with exit code 0
